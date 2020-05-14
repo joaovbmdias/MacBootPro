@@ -54,25 +54,3 @@ defaults write com.clipy-app.Clipy menuItemsAreMarkedWithNumbers -int 0
 defaults write com.clipy-app.Clipy kCPYPrefNumberOfItemsPlaceInlineKey -int 20
 defaults write com.clipy-app.Clipy kCPYPrefNumberOfItemsPlaceInsideFolderKey -int 20
 defaults write com.clipy-app.Clipy loginItem -int 1
-
-echo "> Configure Rectangle"
-defaults write com.knollsoft.Rectangle launchOnLogin -int 1
-
-echo "> Configure iTerm"
-defaults write com.googlecode.iterm2 HideTab -int 0
-defaults write com.googlecode.iterm2 StatusBarPosition -int 1
-
-echo "> Configure VS Code"
-VSCODE_SETTINGS="$HOME/Library/Application Support/Code/User/settings.json"
-if test -s "$VSCODE_SETTINGS"
-then
-    echo "VS Code settings file already exists, skipping"
-else
-    code --install-extension Shan.code-settings-sync
-    cat <<EOF > "$VSCODE_SETTINGS"
-    {
-        "sync.removeExtensions": false,
-        "sync.gist": "366789c5627379c6b831ecc4a624e4a4",
-    }
-EOF
-fi

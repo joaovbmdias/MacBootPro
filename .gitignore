@@ -1,2 +1,3 @@
 *.swp
 *.lock.json
+*.DS_STORE

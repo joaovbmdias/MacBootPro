@@ -4,12 +4,12 @@ brew "python@3.8"
 mas "Microsoft-Remote-Desktop", id: 1295203466
 mas "Sip", id: 507257563
 mas "JSON-Validator", id: 457563999
-#TODO:cask "iterm2"
+cask "iterm2"
 cask "virtualbox"
 cask "docker"
 cask "lens"
 cask "insomnia"
-#TODO:cask "fork"
+cask "fork"
 
 #utilities
 mas "amphetamine", id: 937984704
@@ -58,12 +58,10 @@ mas "Helium", id: 1054607607
 cask "steam"
 cask "vlc"
 brew "Rigellute/tap/spotify-tui"
-#TODO: spotifyd
 
-#TODO: padbury_clock screensaver
+#TODO: spotifyd
 #TODO: ON1 Photo Raw
 #TODO: Hue Sync
-#TODO: Jellyfin
 #TODO: DaVinci Resolve
 #TODO: Autenticação.gov
 #TODO: oh-my-zsh
