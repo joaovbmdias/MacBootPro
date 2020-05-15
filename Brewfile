@@ -23,6 +23,7 @@ cask "app-cleaner"
 cask "bettertouchtool"
 brew "neofetch"
 brew "koekeishiya/formulae/yabai"
+tap "cjbassi/gotop"
 
 #social
 cask "discord"
