@@ -67,6 +67,7 @@ cask "steam"
 cask "vlc"
 brew "Rigellute/tap/spotify-tui"
 
+########################
 #TODO: spotifyd
 #TODO: ON1 Photo Raw
 #TODO: Hue Sync
