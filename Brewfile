@@ -55,6 +55,7 @@ mas "wireguard", id: 1451685025
 mas "nordvpn", id: 1116599239
 cask "tunnelblick"
 #brew "wireshark"
+cask "ccleaner"
 
 #multimedia
 mas "Helium", id: 1054607607
@@ -69,3 +70,4 @@ brew "Rigellute/tap/spotify-tui"
 #TODO: DaVinci Resolve
 #TODO: Autenticação.gov
 #TODO: oh-my-zsh
+#TODO: BleachBit
