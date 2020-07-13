@@ -56,6 +56,9 @@ mas "nordvpn", id: 1116599239
 cask "tunnelblick"
 #brew "wireshark"
 cask "ccleaner"
+cask "lulu"
+cask "knockknock"
+
 
 #multimedia
 mas "Helium", id: 1054607607
