@@ -31,3 +31,13 @@ user_pref("keyword.enabled", true);
  * true=Activity Stream (default, see 0105), false=blank page
  * [SETTING] Home>New Windows and Tabs>New tabs ***/
 user_pref("browser.newtabpage.enabled", true);
+
+user_pref("privacy.clearOnShutdown.sessions", false); // Active Logins
+user_pref("privacy.clearOnShutdown.history", false); // Browsing & Download History
+user_pref("privacy.clearOnShutdown.cookies", false);
+user_pref("privacy.clearOnShutdown.siteSettings", false); // Site Preferences
+
+
+user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true); // Site Preferences
+
+user_pref("network.security.esni.enabled", true); // Encrypted SNI
