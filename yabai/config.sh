@@ -1,21 +1,18 @@
-# install the scripting addition
-#sudo yabai --install-sa
+if which -s yabai
+then
+    echo "> Configuring Yabai"
+    DOTFILES="$HOME/Development/dotfiles"
 
-# start yabai
-#brew services start yabai
+    # install the scripting addition
+    sudo yabai --install-sa
 
-# load the scripting addition
-#killall Dock
+    cp "$DOTFILES"/Yabai/.yabairc $HOME/.yabairc
 
+    # start yabai
+    brew services start yabai
 
-# # stop, upgrade, start yabai
-# brew services stop yabai
-# brew upgrade yabai
-# brew services start yabai
-
-# # reinstall the scripting addition
-# sudo yabai --uninstall-sa
-# sudo yabai --install-sa
-
-# # load the scripting addition
-# killall Dock
+    # load the scripting addition
+    killall Dock
+else
+    echo "Yabai not installed"
+fi

@@ -1,3 +1,6 @@
+# Support
+brew "mas"
+
 #development
 cask "visual-studio-code"
 brew "python@3.8"
@@ -65,7 +68,7 @@ mas "Helium", id: 1054607607
 #cask "spotify"
 cask "steam"
 cask "vlc"
-brew "Rigellute/tap/spotify-tui"
+#brew "Rigellute/tap/spotify-tui"
 
 ########################
 #TODO: spotifyd

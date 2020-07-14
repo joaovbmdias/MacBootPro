@@ -1,10 +1,9 @@
-echo "> Configure VS Code"
-
 VSCODE_SETTINGS="$HOME/Library/Application Support/Code/User/settings.json"
 if test -s "$VSCODE_SETTINGS"
 then
     echo "VS Code settings file already exists, skipping"
 else
+    echo "> Configuring VS Code"
     code --install-extension Shan.code-settings-sync
     cat <<EOF > "$VSCODE_SETTINGS"
     {

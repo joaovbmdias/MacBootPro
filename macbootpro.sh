@@ -11,8 +11,16 @@ fi
 echo "> Updating Homebrew..."
 brew update
 
-echo "> Install Mac App Store CLI..."
-brew install mas
+echo "Creating Development Folder..."
+DEV="$HOME/Development"
+if test -s "$DEV"
+then
+    echo "Development folder already exists, skipping"
+else
+    mkdir $DEV
+    echo "Getting Dotfiles..."
+    git clone https://github.com/joaovbmdias/dotfiles $DEV
+fi
 
 echo "> Applying Brewfile..."
 brew bundle
