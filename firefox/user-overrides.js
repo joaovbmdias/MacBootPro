@@ -41,3 +41,5 @@ user_pref("privacy.clearOnShutdown.siteSettings", false); // Site Preferences
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true); // Site Preferences
 
 user_pref("network.security.esni.enabled", true); // Encrypted SNI
+
+user_pref("privacy.resistFingerprinting", false); // Resist FingerPrinting
